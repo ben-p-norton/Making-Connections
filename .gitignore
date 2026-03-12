@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+# CLion stuff
+.idea
+cmake-build-debug
