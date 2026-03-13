@@ -7,32 +7,31 @@
 #include <algorithm>
 #include <fstream>
 #include <sstream>
+#include <ios>
 
 using std::string, std::iostream, std::transform,
       std::vector, std::cin, std::cout, std::endl, std::fstream,
-      std::istringstream;
+      std::istringstream, std::ios;
 
 class Puzzle {
 private:
     string name;
-    int size;
+    unsigned long size;
     vector<vector<string>> groups;
 
     void createGroups();
-    void addTerm(string& main, const string& term);
-    string desiccate();
-    void reconstitute(string dryPuzzle);
 
 public:
     // Constructors
-    Puzzle(int size, std::string name);
-    Puzzle(const std::string& dryPuzzle);
-
-    void save(string filename);
+    Puzzle(unsigned long size, std::string name);
+    Puzzle(const std::string& filename);
 
     // Getters
-    vector<vector<int>> getGroups();
     string getName();
+
+    // Conversion to and from txt file
+    void desiccate(string filename);
+    void reconstitute(string filename);
 
 
 };

@@ -6,10 +6,10 @@ bool testGrid();
 
 int main() {
     if (testPuzzle()) {
-        cout << "Passed all Card test cases" << endl;
+        cout << "Passed all Puzzle test cases" << endl;
     }
     if (testGrid()) {
-        cout << "Passed all Deck test cases" << endl;
+        cout << "Passed all Grid test cases" << endl;
     }
     return 0;
 }
