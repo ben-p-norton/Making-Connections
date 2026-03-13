@@ -9,3 +9,8 @@ add_executable(Making_Connections
         main.cpp
         Puzzle.cpp
         Puzzle.h)
+
+add_executable(Connections_Testing
+        testing.cpp
+        Puzzle.cpp
+        Puzzle.h)

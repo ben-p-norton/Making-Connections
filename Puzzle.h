@@ -1,13 +1,7 @@
-//
-// Created by Ben Norton on 3/12/26.
-//
-
 #ifndef MAKING_CONNECTIONS_PUZZLE_H
 #define MAKING_CONNECTIONS_PUZZLE_H
 
-
 #include <string>
-#include <optional>
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -42,6 +36,5 @@ public:
 
 
 };
-
 
 #endif //MAKING_CONNECTIONS_PUZZLE_H
